@@ -1,0 +1,9 @@
+// this listens to the selected obj
+module.exports =  function(state=null, action){
+	switch(action.type){
+		case "USER_SELECTED":
+		return action.payload;
+		break;		
+	}
+	return state;
+}
